@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>formulaire2.com</title>
+    
+    <style>
+    .header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .header img {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <img src="uac.png" alt="Logo gauche" class="logo">
+        <h1>FORMULAIRE</h1>
+        <img src="eneam.jpg" alt="Logo droite" class="logo">
+    </div>
+
+    <form class="formulaire">
+        <fieldset>
+            <legend>ETAT CIVIL</legend>
+            <label>NOM: <input type="text" name="nom"></label><br><br>
+            <label>PRENOM: <input type="text" name="prenom"></label><br><br>
+            <label>DOMAINE: <input type="text" name="domaine"></label><br><br>
+            <label>Mail: <input type="email" name="email"></label><br><br>
+            <label>SEXE: 
+                <select name="sexe">
+                    <option value="masculin">Masculin</option>
+                    <option value="feminin">Féminin</option>
+                </select>
+            </label><br><br>
+            <label>CONTACT: <input type="tel" name="contact"></label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Diplômes</legend>
+            <p>Faites un souhait que vous voudriez voir exaucé :</p>
+            <label><input type="checkbox" name="diplome" value="CEP"> CEP</label>
+            <label><input type="checkbox" name="diplome" value="BEPC"> BEPC</label>
+            <label><input type="checkbox" name="diplome" value="BAC"> BAC</label>
+            <label><input type="checkbox" name="diplome" value="BTS"> BTS</label>
+        </fieldset>
+
+        <label>Votre adresse:<br>
+            <textarea name="adresse" rows="3" cols="40"></textarea>
+        </label><br>
+
+        <p>Pays :</p>
+        <label><input type="radio" name="pays" value="BENIN"> BENIN</label>
+        <label><input type="radio" name="pays" value="SENEGAL"> SENEGAL</label>
+        <label><input type="radio" name="pays" value="FRANCE"> FRANCE</label><br><br>
+
+        <div class="buttons">
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Réinitialiser">
+            <input type="button" value="Quitter" onclick="window.close();">
+        </div>
+    </form>
+</body>
+</html>

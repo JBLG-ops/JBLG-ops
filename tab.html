@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableaux</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .header img {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h2, h3 {
+      color: #555;
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 0 auto 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    .entete {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+
+    .col1 {
+      vertical-align: middle;
+      background-color: #ffff7f;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #ddd;
+      margin: 40px 0;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+
+    .menu button {
+      padding: 5px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 150px;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+  <img src="uac.png" alt="Image gauche">
+  <h1>Bienvenue sur ma troisième page</h1>
+  <img src="eneam.jpg" alt="Image droite">
+</div>
+
+  <!-- Premier tableau : présentation -->
+  <h1>TABLEAU</h1>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th colspan="3">Liste IGI/B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>NOM</th>
+        <th>ÂGE</th>
+        <th>Pays</th>
+      </tr>
+      <tr>
+        <td>TCHOGNINOU Jean-Baptiste</td>
+        <td>17 ans</td>
+        <td>BENIN</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <!-- Tableau 1 -->
+  <h3>Tableau 1</h3>
+  <table>
+    <tr>
+      <td class="entete" colspan="2">A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>C</td>
+    </tr>
+  </table>
+
+  <!-- Tableau 2 -->
+  <h3>Tableau 2</h3>
+  <table>
+    <tr>
+      <td class="col1" rowspan="2">A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+    </tr>
+  </table>
+
+  <!-- Tableau fusionné -->
+  <h3>Fusion des deux Tableaux</h3>
+  <table>
+    <tr>
+      <td class="entete" colspan="3">A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>C</td>
+      <td rowspan="2" class="col1">A</td>
+    </tr>
+    <tr>
+      <td colspan="2">C</td>
+    </tr>
+  </table>
+  </div>
+<div class="menu">
+     <a href="acceuil1.html"> <button>Accueil</button></a>
+    <a href="p1.html" style="text-decoration:none"><button>Page 1</button></a>
+    <a href="p2.html" style="text-decoration:none"><button>Page 2</button>
+  <a href="tab.html" style="text-decoration:none">  <button>Tableaux</button></a>
+    <a href="form1.html" style="text-decoration:none"><button>Formulaire1</button></a>
+   <a href="form2.html" style="text-decoration:none"><button>Formulaire2</button>
+  <a href="cv.html" style="text-decoration:none">  <button>CV</button>
+  </div>
+
+</body>
+</html>

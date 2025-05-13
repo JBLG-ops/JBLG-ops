@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Deuxième Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .header-container img {
+      width: 100px;
+      height: auto;
+    }
+
+    .welcome {
+      text-align: center;
+      flex: 1;
+    }
+
+    .welcome h1 {
+      font-size: 22px;
+      margin: 5px 0;
+      line-height: 1.2;
+    }
+
+    .section {
+      margin: 20px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .etat-civil-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .info-list {
+      flex: 1;
+    }
+
+    .info-item {
+      margin-bottom: 10px;
+    }
+
+    .info-label {
+      font-weight: bold;
+      display: inline-block;
+      width: 100px;
+    }
+
+    .photo-civil {
+      margin-left: 20px;
+    }
+
+    .photo-civil img {
+      width: 120px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .description {
+      text-align: justify;
+      line-height: 1.6;
+    }
+          .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+
+    .menu button {
+      padding: 5px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 150px;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="uac.png" alt="Logo UAC">
+      <div class="welcome">
+        <h1>BIENVENUE</h1>
+        <h1>À LA</h1>
+        <h1>DEUXIÈME</h1>
+        <h1>PAGE</h1>
+      </div>
+      <img src="eneam.jpg" alt="Logo ENEAM">
+    </div>
+  </header>
+
+  <div class="section">
+    <div class="section-title">I - ÉTAT CIVIL</div>
+    <div class="etat-civil-container">
+      <div class="info-list">
+        <div class="info-item"><span class="info-label">Nom :</span><span>TCHOGNINOU</span></div>
+        <div class="info-item"><span class="info-label">Prénoms :</span><span>Godson</span></div>
+        <div class="info-item"><span class="info-label">Âge :</span><span>17 ans</span></div>
+        <div class="info-item"><span class="info-label">Profession :</span><span>Étudiant</span></div>
+      </div>
+      <div class="photo-civil">
+        <img src="jblg.jpg" alt="Photo">
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">II - DESCRIPTION</div>
+    <div class="description">
+      Je vais être bref : je suis un jeune étudiant en Informatique de Gestion à l'École Nationale d'Économie Appliquée et de Management. Originaire du Bénin, je suis animé par la volonté de devenir milliardaire afin de mettre ma famille à l'aise.
+    </div>
+  </div>
+  <div class="menu">
+     <a href="acceuil1.html"> <button>Accueil</button></a>
+    <a href="p1.html" style="text-decoration:none"><button>Page 1</button></a>
+    <a href="p2.html" style="text-decoration:none"><button>Page 2</button>
+  <a href="tab.html" style="text-decoration:none">  <button>Tableaux</button></a>
+    <a href="form1.html" style="text-decoration:none"><button>Formulaire1</button></a>
+   <a href="form2.html" style="text-decoration:none"><button>Formulaire2</button>
+  <a href="cv.html" style="text-decoration:none">  <button>CV</button>
+  </div>
+
+</body>
+</html>
